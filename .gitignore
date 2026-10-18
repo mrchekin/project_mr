@@ -1,0 +1,43 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# Windows metadata
+*:Zone.Identifier
+
+# PDF and compressed copies
+*.pdf
+*_compressed.pdf
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+# Presentation files
+*.pptx
+*.ppt
+
+# Paper figures (binary)
+paper/figures/
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.eps
+paper/*.pdf
+paper/*.txt
+paper/parts/
+.obsidian/
+.venv-w5/
+.obsidian/workspace.json
