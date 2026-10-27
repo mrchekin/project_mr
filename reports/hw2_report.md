@@ -1,0 +1,1 @@
+| В строке SOC content `source_page` заменён на `abc` | внесённая | `checks/check.py` (Д6) + `test_source_page_integer_for_pdf` | `results/caught_error_before.txt` (код 1) | `results/caught_error_after.txt` (код 0) |

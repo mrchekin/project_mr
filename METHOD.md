@@ -107,7 +107,7 @@
 | Дата | Что было не так | Чем поймано | Как исправлено | Команда «до» и «после» |
 |---|---|---|---|---|
 | 2026-10-27 | В строке HWEC `source_page` заменён на `abc` (внесённая) | `checks/check.py` (Д6) + `test_properties.py` | возврат к числу | `git switch bug/source-page-typo` → код 1; `git switch main` → код 0 |
-
+| 2026-10-27 | В строке `SOC content` поле `source_page` заменено на `abc` (внесённая) | `checks/check.py` (Д6) + `checks/test_properties.py::test_source_page_integer_for_pdf` | возврат к числу `1` | «до»: `git switch bug/source-page-typo` → `pytest` код 1, `check.py` код 1; «после»: `git switch main` → оба 0 |
 ## 10. Ограничения
 
 - Верификатор проверяет **структуру и происхождение**, не научную корректность значений `sensitivity`.
