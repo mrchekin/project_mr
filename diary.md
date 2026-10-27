@@ -352,3 +352,36 @@
   (ожидал `[Автор, с. N]`, а в обзоре формат
   `(Feeney et al., 2024; файл.pdf, стр. N)`); regex переделан под
   фактический формат с предварительной склейкой одиночных переносов.
+
+  ## 2026-10-27 — Неделя 6: верификатор таблицы индикаторов
+
+- Запрос агенту: не применимо — верификатор написан вручную по
+  материалам недели 6 (`METHOD_TEMPLATE.md`, `RUBRIC.md`).
+- Что сделано:
+  1) `METHOD.md` по шаблону (разделы 0–10), закоммичен до первого
+     прогона нового верификатора (коммит `c34c5ee`);
+  2) `checks/check_graph.py` — договор о графе (Д9.1–Д10),
+     семантическое сравнение коротких кодов;
+  3) `checks/test_properties.py` — 6 тестов на свойствах таблицы;
+  4) `scripts/run_verifier.py` — 4 шага глубины
+     dry → smoke → sweep → full;
+  5) внесённая ошибка (`source_page=abc`) в ветке
+     `bug/source-page-typo`; вывод «до»/«после» в
+     `results/caught_error_before.txt` / `_after.txt`;
+  6) `results/subgoals.md` — дерево подцелей и журнал попыток;
+  7) `reports/hw2_report.md` — разделы 1, 2, 3, 6, 7, 8 отчёта ДЗ 2.
+- Результат:
+  - `python scripts/run_verifier.py` → 4 pass, код 0;
+  - «до»: `pytest` код 1 + `check.py` код 1;
+  - «после»: `pytest` код 0 (6 passed) + `check.py` код 0;
+  - ветка `bug/source-page-typo` сохранена для воспроизведения;
+  - метка `exp-verifier` отправлена на GitHub.
+- Точка проверки:
+  - `python -m pytest checks -q` → 6 passed;
+  - `python scripts/run_verifier.py` → 4 pass;
+  - `git log --reverse --format="%ad %s" -- METHOD.md | head -1` —
+    коммит методики раньше `results/`;
+  - `grep -c FAIL results/caught_error_before.txt` → ≥1;
+  - `grep -c passed results/caught_error_after.txt` → ≥1;
+  - `git tag -l "exp-*"` → `exp-verifier`.
+- Итог проверки: принято.
