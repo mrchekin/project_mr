@@ -1,0 +1,5 @@
+datetime,step,status,seconds,code
+2026-10-27T12:19:29,dry,pass,0.02,0
+2026-10-27T12:19:29,smoke,pass,0.24,0
+2026-10-27T12:19:29,sweep,pass,0.26,0
+2026-10-27T12:19:29,full,pass,0.02,0
