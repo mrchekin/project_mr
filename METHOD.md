@@ -40,7 +40,7 @@
 | Правило | Как проверяется | Код нарушения |
 |---|---|---|
 | Столбцы точно `indicator, category, method, sensitivity, source_file, source_page` | `checks/check.py::check_table` | `header_mismatch` |
-| `category` ∈ {chemical, physical, biological, microbial, labile carbon} | там же | `bad_category` |
+| `category` ∈ {chemical, physical, biological, labile carbon} | там же | `bad_category` |
 | `sensitivity` ∈ {low, medium, high, medium-high} | там же | `bad_sensitivity` |
 | `indicator` уникален | там же | `duplicate_indicator` |
 | `source_file` существует, расширение `.pdf/.md/.txt` | там же | `missing_source` |
