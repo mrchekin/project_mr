@@ -73,3 +73,20 @@ def test_indicator_unique(rows):
     names = [r["indicator"].lower() for r in rows]
     assert len(names) == len(set(names)), \
         f"дубликаты: {[n for n in set(names) if names.count(n) > 1]}"
+
+
+
+def test_md_and_tex_literature_match():
+    """Свойство 7: число источников в .md и .tex совпадает."""
+    import re
+    md = (ROOT / "paper" / "review_soil_health_indicators.md").read_text(encoding="utf-8")
+    tex = (ROOT / "paper" / "review_soil_health_indicators.tex").read_text(encoding="utf-8")
+
+    md_split = md.split("## Литература", 1)
+    assert len(md_split) == 2, "в .md нет раздела «## Литература»"
+    md_count = len(re.findall(r"^\d+\.", md_split[1], re.M))
+    tex_count = len(re.findall(r"\\bibitem\{", tex))
+
+    assert md_count == tex_count, (
+        f"Литература .md ({md_count}) и .tex ({tex_count}) не совпадают"
+    )
