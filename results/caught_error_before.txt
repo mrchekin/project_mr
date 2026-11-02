@@ -1,0 +1,28 @@
+.....F                                                                   [100%]
+=================================== FAILURES ===================================
+_______________________ test_source_page_integer_for_pdf _______________________
+
+rows = [{'indicator': 'SOC content', 'category': 'chemical', 'method': 'dry combustion', 'sensitivity': 'high', ...}, {'indic...{'indicator': 'aggregate stability', 'category': 'physical', 'method': 'wet sieving', 'sensitivity': 'high', ...}, ...]
+
+    def test_source_page_integer_for_pdf(rows):
+        """Свойство 6: для .pdf source_page — целое 1..999."""
+        import re
+        paper = ROOT / "paper"
+        for r in rows:
+            if (paper / r["source_file"]).suffix.lower() != ".pdf":
+                continue
+>           assert re.fullmatch(r"\d+", r["source_page"]), \
+                f"{r['indicator']}: source_page={r['source_page']!r} " \
+                f"— для PDF нужно целое число"
+E           AssertionError: SOC content: source_page='abc' — для PDF нужно целое число
+E           assert None
+E            +  where None = <function fullmatch at 0x7067ca77aae0>('\\d+', 'abc')
+E            +    where <function fullmatch at 0x7067ca77aae0> = <module 're' from '/usr/lib/python3.14/re/__init__.py'>.fullmatch
+
+checks/test_properties.py:84: AssertionError
+=========================== short test summary info ============================
+FAILED checks/test_properties.py::test_source_page_integer_for_pdf - Assertio...
+1 failed, 5 passed in 0.08s
+OK: review_soil_health_indicators.md: 11 разделов, все обязательные на месте
+FAIL:
+  - строка 1: source_page='abc' — для PDF нужно целое число

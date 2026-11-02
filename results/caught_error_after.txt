@@ -1,5 +1,5 @@
-.....                                                                    [100%]
-5 passed in 0.08s
+......                                                                   [100%]
+6 passed in 0.07s
 OK: review_soil_health_indicators.md: 11 разделов, все обязательные на месте
 OK: indicators_table.md: 25 строк, все поля валидны, индикаторы уникальны
 
