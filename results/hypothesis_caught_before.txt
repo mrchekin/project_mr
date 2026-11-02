@@ -1,0 +1,39 @@
+F..........                                                              [100%]
+=================================== FAILURES ===================================
+__________________________ test_count_preserves_total __________________________
+
+    @given(rows=rows)
+>   @settings(suppress_health_check=_slow, max_examples=50)
+                   ^^^
+
+checks/test_properties_hypothesis.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+rows = [{'indicator': '00', 'category': 'labile carbon', 'method': '00', 'sensitivity': 'high', ...}]
+
+    @given(rows=rows)
+    @settings(suppress_health_check=_slow, max_examples=50)
+    def test_count_preserves_total(rows):
+        counts = count_by_category(rows)
+>       assert sum(counts.values()) == len(rows)
+E       AssertionError: assert 0 == 1
+E        +  where 0 = sum(dict_values([0, 0, 0]))
+E        +    where dict_values([0, 0, 0]) = <built-in method values of dict object at 0x7d8ea052c080>()
+E        +      where <built-in method values of dict object at 0x7d8ea052c080> = {'biological': 0, 'physical': 0, 'chemical': 0}.values
+E        +  and   1 = len([{'indicator': '00', 'category': 'labile carbon', 'method': '00', 'sensitivity': 'high', ...}])
+E       Failing test case: test_count_preserves_total(
+E           # The test always failed when commented parts were varied together.
+E           rows=[{
+E                'indicator': '00',  # or any other generated value
+E                'category': 'labile carbon',
+E                'method': '00',  # or any other generated value
+E                'sensitivity': 'high',  # or any other generated value
+E                'source_file': '000',  # or any other generated value
+E                'source_page': '1',  # or any other generated value
+E            }],
+E       )
+
+checks/test_properties_hypothesis.py:31: AssertionError
+=========================== short test summary info ============================
+FAILED checks/test_properties_hypothesis.py::test_count_preserves_total - Ass...
+1 failed, 10 passed in 1.51s
