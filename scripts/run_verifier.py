@@ -3,16 +3,29 @@
 import subprocess, sys, time
 from datetime import datetime
 from pathlib import Path
-
+# Проверка зависимостей: понятное сообщение вместо трейсбека
+try:
+    import pytest  # noqa: F401
+    import hypothesis  # noqa: F401
+    import pint  # noqa: F401
+    import yaml  # noqa: F401
+except ImportError as e:
+    print(f"FAIL: не хватает зависимости: {e.name}", file=sys.stderr)
+    print("Активируйте venv проекта или запустите через .venv/bin/python:",
+          file=sys.stderr)
+    print("  source .venv/bin/activate && python scripts/run_verifier.py",
+          file=sys.stderr)
+    print("  .venv/bin/python scripts/run_verifier.py", file=sys.stderr)
+    sys.exit(2)
 ROOT = Path(__file__).resolve().parent.parent
 LOG = ROOT / "results" / "verifier_log.csv"
 
 STEPS = [
-    ("dry",   ["python", "checks/check.py"]),
-    ("smoke", ["python", "-m", "pytest",
+    ("dry",   [sys.executable, "checks/check.py"]),
+    ("smoke", [sys.executable, "-m", "pytest",
                "checks/test_properties.py", "-q"]),
-    ("sweep", ["python", "-m", "pytest", "checks", "-q"]),
-    ("full",  ["python", "checks/check_graph.py"]),
+    ("sweep", [sys.executable, "-m", "pytest", "checks", "-q"]),
+    ("full",  [sys.executable, "checks/check_graph.py"]),
 ]
 
 

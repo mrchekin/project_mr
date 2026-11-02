@@ -98,6 +98,13 @@ G0: таблица и обзор согласованы, проверка вос
 | full | `python checks/check_graph.py` | 0,02 с | 0 | граф согласован |
 
 Журнал прогонов: `results/verifier_log.csv` (4 строки `pass`).
+**Примечание.** `results/verifier_log.csv` перезаписывается при каждом
+запуске `run_verifier.py` — хранит результат текущего прогона, не историю.
+Скрипт использует `sys.executable`, поэтому работает и после активации
+venv (`python scripts/run_verifier.py`), и без неё
+(`.venv/bin/python scripts/run_verifier.py`). Запуск через системный
+Python (`python3 scripts/run_verifier.py` без venv) не работает — в нём
+нет зависимостей; скрипт проверяет это и выдаёт понятное сообщение.
 
 ### 5.2. Свойства через hypothesis (направление B)
 
@@ -135,6 +142,14 @@ git checkout hw2
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python scripts/run_verifier.py
+**Формы запуска, обе допустимы:**
+
+- после активации venv: `source .venv/bin/activate && python scripts/run_verifier.py`;
+- без активации: `.venv/bin/python scripts/run_verifier.py`.
+
+Запуск `python3 scripts/run_verifier.py` без venv **не работает** — в
+системном Python нет `pytest`, `hypothesis`, `pint`, `pyyaml`. Скрипт
+проверяет зависимости и выдаёт сообщение с подсказкой.
 
 ## 8. Ограничения
 
