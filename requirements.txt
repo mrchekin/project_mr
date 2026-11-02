@@ -1,0 +1,7 @@
+hypothesis==6.170.12
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.1.0
+Pint==0.26.2
+pytest==9.1.1
+PyYAML==6.0.3
