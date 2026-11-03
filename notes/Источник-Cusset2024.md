@@ -1,5 +1,6 @@
 ---
 type: Источник
+source: paper/1-s2.0-S1470160X24011634-main.pdf
 ---
 
 # Источник: Cusset 2024 (Ecological Indicators 167)
