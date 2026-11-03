@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W7220393664
 doi: 10.1016/j.geoderma.2026.118073
 year: 2026
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Ibarra López 2026 (Geoderma)

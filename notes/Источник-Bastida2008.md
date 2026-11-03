@@ -1,9 +1,11 @@
 ---
+
 type: Источник
 doi: 10.1016/j.geoderma.2008.08.007
 year: 2008
 retrieved: 2026-10-31
 source: "paper/SQIreviewBastidaetal.pdf"
+pdf: paper/SQIreviewBastidaetal.pdf
 ---
 
 # Источник: Bastida 2008 (Geoderma)

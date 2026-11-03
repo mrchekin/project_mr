@@ -1,9 +1,11 @@
 ---
+
 type: Источник
 doi: 10.1016/j.soisec.2023.100084
 year: 2023
 retrieved: 2026-10-31
 source: "paper/recomendation 1-s2.0-S2667006223000011-main.pdf"
+pdf: paper/recomendation 1-s2.0-S2667006223000011-main.pdf
 ---
 
 # Источник: Bagnall 2023 (Soil Security)

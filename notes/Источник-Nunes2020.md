@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W3011747679
 doi: 10.1016/j.geoderma.2020.114335
 year: 2020
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Nunes 2020 (Geoderma)

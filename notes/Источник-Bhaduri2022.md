@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W4292258180
 doi: 10.3389/fmicb.2022.938481
 year: 2022
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: paper/fmicb-13-938481.pdf
 ---
 
 # Источник: Bhaduri 2022 (Frontiers in Microbiology)

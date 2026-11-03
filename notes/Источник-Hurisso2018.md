@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W2800460866
 doi: 10.2134/ael2018.02.0006
 year: 2018
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Hurisso 2018 (Agrosystems, Geosciences & Environment)

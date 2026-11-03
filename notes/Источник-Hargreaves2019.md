@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W2977797462
 doi: 10.1139/cjss-2019-0062
 year: 2019
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Hargreaves 2019 (Canadian Journal of Soil Science)

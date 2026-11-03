@@ -1,6 +1,7 @@
 ---
+
 type: Источник
-source: paper/1-s2.0-S1470160X18309415-mainext.pdf
+pdf: paper/1-s2.0-S1470160X18309415-mainext.pdf
 ---
 
 # Источник: Bongiorno 2019 (Ecological Indicators 99)

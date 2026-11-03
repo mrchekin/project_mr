@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W2086084649
 doi: 10.1155/2012/548620
 year: 2012
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Mathew 2012 (Applied and Environmental Soil Science)

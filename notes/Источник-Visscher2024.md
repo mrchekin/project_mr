@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W4391326374
 doi: 10.1016/j.geodrs.2024.e00772
 year: 2024
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Visscher 2024 (Geoderma Regional)

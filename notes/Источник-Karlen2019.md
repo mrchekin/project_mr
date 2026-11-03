@@ -1,9 +1,11 @@
 ---
+
 type: Источник
 doi: 10.1016/j.still.2019.104365
 year: 2019
 retrieved: 2026-10-31
 source: "paper/Karlen 2019_compressed.pdf"
+pdf: paper/Karlen 2019_compressed.pdf
 ---
 
 # Источник: Karlen 2019 (Soil & Tillage Research)

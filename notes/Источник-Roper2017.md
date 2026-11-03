@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W2752633091
 doi: 10.2136/sssaj2016.12.0400
 year: 2017
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Roper 2017 (Soil Science Society of America Journal)

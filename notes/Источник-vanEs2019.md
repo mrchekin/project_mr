@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W2947414662
 doi: 10.2136/sssaj2018.09.0338
 year: 2019
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: van Es 2019 (Soil Science Society of America Journal)

@@ -1,9 +1,11 @@
 ---
+
 type: Источник
 doi: 10.1016/j.scitotenv.2018.08.259
 year: 2019
 retrieved: 2026-10-31
 source: "paper/1-s2.0-S0048969718332224-main.pdf"
+pdf: paper/1-s2.0-S0048969718332224-main.pdf
 ---
 
 # Источник: Rinot 2019 (Science of the Total Environment)

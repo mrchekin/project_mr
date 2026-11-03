@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W1989413833
 doi: 10.1590/s0103-90162013000400009
 year: 2013
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: paper/Cardoso 2012.pdf
 ---
 
 # Источник: Cardoso 2013 (Scientia Agricola)

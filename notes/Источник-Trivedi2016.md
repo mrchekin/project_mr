@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W2463853901
 doi: 10.3389/fpls.2016.00990
 year: 2016
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: paper/fpls-07-00990.pdf
 ---
 
 # Источник: Trivedi 2016 (Frontiers in Plant Science)

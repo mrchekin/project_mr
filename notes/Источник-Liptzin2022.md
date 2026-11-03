@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W4280625406
 doi: 10.1016/j.soilbio.2022.108708
 year: 2022
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Liptzin 2022 (Soil Biology and Biochemistry)

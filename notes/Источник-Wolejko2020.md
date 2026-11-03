@@ -1,9 +1,11 @@
 ---
+
 type: Источник
 doi: 10.1016/j.apsoil.2019.09.006
 year: 2020
 retrieved: 2026-10-31
 source: "paper/1-s2.0-S0929139319308947-main.pdf"
+pdf: paper/1-s2.0-S0929139319308947-main.pdf
 ---
 
 # Источник: Wołejko 2020 (Applied Soil Ecology)

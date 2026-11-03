@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W2115599238
 doi: 10.5194/soil-1-173-2015
 year: 2015
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Zornoza 2015 (SOIL)

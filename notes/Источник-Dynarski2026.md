@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W7118021480
 doi: 10.1016/j.agee.2025.110203
 year: 2026
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Dynarski 2026 (Agriculture, Ecosystems & Environment)

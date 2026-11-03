@@ -1,10 +1,12 @@
 ---
+
 type: Источник
 openalex_id: W4285390554
 doi: 10.3389/fsoil.2022.917885
 year: 2022
 retrieved: 2026-10-18
-source: OpenAlex
+openalex_source: OpenAlex
+pdf: —
 ---
 
 # Источник: Martin 2022 (Frontiers in Soil Science)
