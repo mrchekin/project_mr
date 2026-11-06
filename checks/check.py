@@ -16,13 +16,15 @@ TABLE = ROOT / "paper" / "indicators_table.md"
 
 EXPECTED_COLUMNS = [
     "indicator", "category", "method",
-    "sensitivity", "source_file", "source_page",
+    "sensitivity", "sensitivity_target",
+    "source_file", "source_page",
 ]
 
 VALID_CATEGORY = {"chemical", "physical", "biological",
                   "microbial", "labile carbon"}
 VALID_SENSITIVITY = {"low", "medium", "high", "medium-high"}
-
+VALID_TARGET = {"tillage", "organic_input", "crop_diversity",
+                "land_use_change", "general"}
 PLACEHOLDER_MARKERS = {"test", "todo", "tbd", "n/a", "na",
                        "placeholder", "xxx", "??", "?"}
 
@@ -107,6 +109,7 @@ def check_table():
     paper_dir = ROOT / "paper"
     seen = {}
     errors = []
+    warnings = []
 
     for n, row in enumerate(rows, 1):
         cells = [c.strip() for c in row.strip("|").split("|")]
@@ -118,6 +121,7 @@ def check_table():
         cat = cells[idx["category"]].lower()
         method = cells[idx["method"]]
         sens = cells[idx["sensitivity"]].lower()
+        target = cells[idx["sensitivity_target"]].strip().lower()
         src = cells[idx["source_file"]]
         page = cells[idx["source_page"]]
 
@@ -132,6 +136,13 @@ def check_table():
         if sens not in VALID_SENSITIVITY:
             errors.append(f"строка {n}: sensitivity={sens!r} не из "
                           f"{sorted(VALID_SENSITIVITY)}")
+
+        if target not in VALID_TARGET:
+            errors.append(f"строка {n}: sensitivity_target={target!r} не из "
+                          f"{sorted(VALID_TARGET)}")
+        elif target == "general":
+            warnings.append(f"строка {n}: sensitivity_target=general — "
+                            f"требует сверки по источнику")
 
         key = ind.lower().strip()
         if key in seen:
@@ -164,10 +175,15 @@ def check_table():
             print(f"  ... ещё {len(errors) - 20}")
         sys.exit(1)
 
+    if warnings:
+        print("[СОВЕТ]:")
+        for w in warnings[:20]:
+            print(f"  - {w}")
+        if len(warnings) > 20:
+            print(f"  ... ещё {len(warnings) - 20}")
+
     ok(f"{TABLE.name}: {len(rows)} строк, все поля валидны, "
        f"индикаторы уникальны")
-
-
 def main():
     check_review()
     check_table()

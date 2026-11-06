@@ -18,7 +18,8 @@ NOTES = ROOT / "notes"
 MIN_COVERAGE = 5
 
 HEADER = ["indicator", "category", "method",
-          "sensitivity", "source_file", "source_page"]
+          "sensitivity", "sensitivity_target",
+          "source_file", "source_page"]
 
 
 def fail(msg):
