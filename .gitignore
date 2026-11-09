@@ -41,3 +41,8 @@ paper/parts/
 .obsidian/
 .venv-w5/
 .obsidian/workspace.json
+# Локальное окружение MarkItDown
+.venv-markitdown/
+
+# Преобразованные тексты статей
+results/converted/
