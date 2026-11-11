@@ -10,11 +10,11 @@
 
 ## Текущее состояние (2026-11-11)
 
-- Обзор [paper/review_soil_health_indicators.md](paper/review_soil_health_indicators.md) (18 источников) и таблица [paper/indicators_table.md](paper/indicators_table.md) (25 строк) приняты человеком 09.11.2026; PDF обзора собран локально, в git не входит.
-- HEAD `9dc7baf`. Проверки на `main`: `python checks/check.py` → 0, `python -m pytest checks -q` → 24 passed, `python checks/check_graph.py` → 0.
+- Обзор [paper/review_soil_health_indicators.md](paper/review_soil_health_indicators.md) (19 источников) и таблица [paper/indicators_table.md](paper/indicators_table.md) (25 строк). Версия с 18 источниками принята человеком 09.11.2026; 11.11.2026 добавлен 19-й источник — Bhupenchandra et al. (2026) о ферментативной активности (§4), с записью в Литературу и заметкой [notes/Источник-Bhupenchandra2026.md](notes/Источник-Bhupenchandra2026.md); правки ещё не закоммичены, содержательная сверка нового абзаца не проводилась. PDF обзора собран локально (10 страниц), в git не входит.
+- Проверки на `main`: `python checks/check.py` → 0, `python -m pytest checks -q` → 24 passed, `python checks/check_graph.py` → 0 (33 источника с провенансом).
 - Ссылки в обзоре приведены к единому виду «(Автор, Год)» без страниц. Следствие: `checks/verify_claims.py` больше не находит утверждений (0) и не формирует выборку; отчёт [reports/spot_check_2026-11-09.md](reports/spot_check_2026-11-09.md) относится к версии до унификации ссылок (5/5 подтверждено тогда же).
 - Агент развёрнут локально 10.11.2026 в `~/agent_deploy/` (DeepSeek Harness); VPS-пакет готов, на реальном сервере не проверялся — см. [tasks/развернуть-агента.md](tasks/развернуть-агента.md) и раздел «Развёртывание агента».
-- Открытые задачи: синхронизация §2.1 `.md`/`.tex` ([tasks/сверить-раздел-2-1-md-tex.md](tasks/сверить-раздел-2-1-md-tex.md)); атрибуция Panagos 2024 (файл `paper/JRC138417_01.pdf` — отчёт JRC, а в Литературе статья EJSS); сверка единиц PLFA и страниц `indicators_table.md` по PDF.
+- Открытые задачи: синхронизация §2.1 `.md`/`.tex` ([tasks/сверить-раздел-2-1-md-tex.md](tasks/сверить-раздел-2-1-md-tex.md)); содержательная сверка нового абзаца §4 (Bhupenchandra 2026); атрибуция Panagos 2024 (файл `paper/JRC138417_01.pdf` — отчёт JRC, а в Литературе статья EJSS); сверка единиц PLFA и страниц `indicators_table.md` по PDF.
 
 ## ДЗ 1. Среда и контекст
 
@@ -48,7 +48,7 @@
 | Общий запуск | [scripts/run_verifier.py](scripts/run_verifier.py), [requirements.txt](requirements.txt) | Последовательный запуск проверок и зависимости Python |
 | Примеры ошибок | [results/caught_error_before.txt](results/caught_error_before.txt), [results/caught_error_after.txt](results/caught_error_after.txt), [results/hypothesis_caught_before.txt](results/hypothesis_caught_before.txt), [results/hypothesis_caught_after.txt](results/hypothesis_caught_after.txt) | Сохранённые результаты до и после исправления специально внесённых ошибок |
 | Содержательная сверка | [checks/verify_claims.py](checks/verify_claims.py), [reports/spot_check_2026-11-09.md](reports/spot_check_2026-11-09.md), [v1](reports/spot_check_2026-11-09_v1.md), [v2](reports/spot_check_2026-11-09_v2.md) | Выборка утверждений и заполненный бланк от 09.11 (5/5); `_v1`/`_v2` — сохранённые версии отчёта. После унификации ссылок скрипт выборку не формирует |
-| Сверка обзора с источниками | [results/сверка_обзора_с_источниками.md](results/сверка_обзора_с_источниками.md) | Итог по 18 источникам: 18/18 подтверждено, 0 расхождений, требующих правки; одно замечание по атрибуции Panagos 2024 |
+| Сверка обзора с источниками | [results/сверка_обзора_с_источниками.md](results/сверка_обзора_с_источниками.md) | Итог по версии с 18 источниками: 18/18 подтверждено, 0 расхождений, требующих правки; одно замечание по атрибуции Panagos 2024 |
 
 В отчётах и журналах приведены результаты конкретных прошлых запусков. Они не заменяют проверку выбранной версии проекта в текущем окружении.
 
