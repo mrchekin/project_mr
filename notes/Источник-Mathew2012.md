@@ -16,7 +16,7 @@ PLFA и ARISA показали различия по обработке и гл�
 
 - тип: [[Источник]]
 - найденЗапросом: [[Запрос 2026-10-18 OpenAlex sensitive soil health indicators]]
-- подтверждёнИсточником: [[Обзор индикаторов здоровья почвы]]
+Использован в [[Обзор индикаторов здоровья почвы]].
 ## Аннотация
 
 [источник] Soil management practices influence soil physical and chemical

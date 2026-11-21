@@ -18,7 +18,7 @@ PLFA, Haney soil health test.
 
 - тип: [[Источник]]
 - найденЗапросом: [[Запрос 2026-10-18 OpenAlex sensitive soil health indicators]]
-- подтверждёнИсточником: [[Обзор индикаторов здоровья почвы]]
+Использован в [[Обзор индикаторов здоровья почвы]].
 ## Аннотация
 
 [источник] Assessment tools are needed to evaluate the effect of farming

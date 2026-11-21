@@ -17,7 +17,7 @@ protein, BG, NAG, PRO, PME, SUL.
 
 - тип: [[Источник]]
 - найденЗапросом: [[Запрос 2026-10-18 OpenAlex sensitive soil health indicators]]
-- подтверждёнИсточником: [[Обзор индикаторов здоровья почвы]]
+Использован в [[Обзор индикаторов здоровья почвы]].
 ## Аннотация
 
 [источник] The sensitivity of soil health indicators to tillage can be strongly

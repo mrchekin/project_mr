@@ -17,7 +17,7 @@ pdf: paper/Cardoso 2012.pdf
 
 - тип: [[Источник]]
 - найденЗапросом: [[Запрос 2026-10-18 OpenAlex sensitive soil health indicators]]
-- подтверждёнИсточником: [[Обзор индикаторов здоровья почвы]]
+Использован в [[Обзор индикаторов здоровья почвы]].
 ## Аннотация
 
 [источник] Soil Health refers to the ecological equilibrium and the functionality

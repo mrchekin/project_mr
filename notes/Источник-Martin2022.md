@@ -16,7 +16,7 @@ pdf: —
 
 - тип: [[Источник]]
 - найденЗапросом: [[Запрос 2026-10-18 OpenAlex sensitive soil health indicators]]
-- подтверждёнИсточником: [[Обзор индикаторов здоровья почвы]]
+Использован в [[Обзор индикаторов здоровья почвы]].
 ## Аннотация
 
 [источник] Soil carbon (C) is a major driver of soil health, yet little is known

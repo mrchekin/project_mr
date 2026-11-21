@@ -18,7 +18,7 @@ mineralization, permanganate oxidizable C, water extractable organic C,
 
 - тип: [[Источник]]
 - найденЗапросом: [[Запрос 2026-10-18 OpenAlex sensitive soil health indicators]]
-- подтверждёнИсточником: [[Обзор индикаторов здоровья почвы]]
+Использован в [[Обзор индикаторов здоровья почвы]].
 ## Аннотация
 
 [источник] Soil organic carbon (SOC) is closely tied to soil health. However,
